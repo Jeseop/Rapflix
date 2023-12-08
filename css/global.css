@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons+Outlined");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+@import "./reset.css";
+@import "./variable.css";
+@import "./navigation-bar.css";
+@import "./media-query.css";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--background-purple);
+  color: white;
+}
+
+input {
+  border: none;
+  outline: none;
+  appearance: none;
+}
+
+.display-flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.best-movie__img-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  padding: 0 20px;
+}
+
+.best-movie__img {
+  width: 22rem;
+  height: 12rem;
+  border-radius: 25px;
+}
+
+/* 제일 중요한 포인트! 재생 버튼은 best-movie와 함께 일정한 위치에 있어야함.
+첫 번째) 부모 기준으로 위치가 움직여야함.
+best-movie 태그의 position값을 relative로 지정하고, 
+의 position값을 absolute로 지정해야하는 것. */
+
+.best-movie__img-container span {
+  position: absolute;
+  background-color: var(--purple);
+  border-radius: 50%;
+  left: calc(50% + 5rem);
+  font-size: 5rem;
+  bottom: 3.2rem;
+}
+
+.best-movie__title {
+  padding-left: 25px;
+}
+.best-movie__promotion-text {
+  font-size: 14px;
+}
+.best-movie__movie-name {
+  color: var(--purple);
+  font-size: 40px;
+  font-weight: 600;
+}

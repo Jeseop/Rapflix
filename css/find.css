@@ -1,0 +1,47 @@
+@import "./global.css";
+
+.find-search-bar-form {
+  padding: 0 25px;
+}
+.find-search-bar-form div {
+  width: 100%;
+}
+.find-search-bar {
+  margin-top: 50px;
+  background-color: var(--darkpurple);
+  border-radius: 25px;
+  width: 100%;
+  padding: 10px;
+  color: white;
+  transition: background-color 0.3s ease-in-out;
+}
+.find-search-bar:focus {
+  background-color: #594374;
+}
+.find-search-bar-form span {
+  position: absolute;
+  font: 1rem;
+  bottom: 0.4rem;
+  /* 책과 다르게 0.4로 하여 가운데로 매칭시킴 */
+  right: 25px;
+}
+.movie-recommendation {
+  margin: 25px 0;
+  padding: 0 25px;
+}
+
+.movie-recommendation__imges {
+  margin-top: 15px;
+  list-style: none;
+  display: flex;
+  overflow-x: scroll;
+}
+
+.movie-recommendation__imges li {
+  margin-left: 5px;
+}
+
+.movie-recommendation__imges img {
+  width: 150px;
+  border-radius: 15px;
+}
